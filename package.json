@@ -14,7 +14,7 @@
     "@hairy/ether-lib": "^1.1.1",
     "@hairy/react-lib": "^1.1.2",
     "@hairy/utils": "^0.7.3",
-    "@harsta/client": "^0.9.9",
+    "@harsta/client": "^0.10.0",
     "@rainbow-me/rainbowkit": "^2.2.4",
     "@tanstack/react-query": "^5.66.9",
     "@unocss/reset": "66.1.0-beta.3",
@@ -38,7 +38,7 @@
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "harsta": "^0.9.9",
+    "harsta": "^0.10.0",
     "iconify-svgo-loader": "^1.0.5",
     "typescript": "^5.7.3",
     "unocss": "^0.60.4"

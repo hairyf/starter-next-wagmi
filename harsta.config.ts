@@ -1,13 +1,6 @@
 import { defineConfig } from 'harsta'
 
 const config = defineConfig({
-  solidity: '0.8.24',
-  defaultNetwork: 'goerli',
-  namedAccounts: {
-    deployer: { default: 0 },
-    owner: { default: 0 },
-    verifier: { default: 1 },
-  },
   networks: {
     goerli: {
       name: 'Goerli',
