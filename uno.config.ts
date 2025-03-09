@@ -1,5 +1,5 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
 import FileSystemSvgoLoader from 'iconify-svgo-loader'
+import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
 
 const localIconfontLoader = FileSystemSvgoLoader('./assets/iconfonts')
 
