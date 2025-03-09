@@ -41,6 +41,6 @@
     "harsta": "^0.10.4",
     "iconify-svgo-loader": "^1.0.5",
     "typescript": "^5.8.2",
-    "unocss": "^0.60.4"
+    "unocss": "^0.65.0"
   }
 }
