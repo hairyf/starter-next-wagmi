@@ -4,10 +4,10 @@ import { connectorsForWallets, getDefaultWallets } from '@rainbow-me/rainbowkit'
 
 import { createConfig } from 'wagmi'
 
-export const wallets = getDefaultWallets().wallets
-export const connectors = connectorsForWallets(wallets, { appName: 'Starter', projectId: ' ' })
+const wallets = getDefaultWallets().wallets
+const connectors = connectorsForWallets(wallets, { appName: 'Starter', projectId: ' ' })
 
-export const config = createConfig({
+export const wagmiConfig = createConfig({
   // @ts-expect-error
   chains: Object.values(chains),
   connectors,

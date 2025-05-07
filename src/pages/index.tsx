@@ -1,5 +1,6 @@
 import { wait } from '@hairy/ether-lib'
 import { contracts, provider, signer } from '@harsta/client'
+import { Button } from '@heroui/react'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { useAccount } from 'wagmi'
 
@@ -17,9 +18,11 @@ function Page() {
   }
 
   return (
-    <>
+    <layouts.default>
       <div className="flex-center">
         <ConnectButton />
+        <Button>12321</Button>
+        <div className="text-red-100">123213</div>
       </div>
       {isConnected && (
         <div className="flex gap-2">
@@ -31,7 +34,7 @@ function Page() {
           </div>
         </div>
       )}
-    </>
+    </layouts.default>
   )
 }
 
