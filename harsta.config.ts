@@ -1,6 +1,9 @@
 import { defineConfig } from 'harsta'
 
 const config = defineConfig({
+  paths: {
+    sources: './src/contracts',
+  },
   networks: {
     goerli: {
       name: 'Goerli',

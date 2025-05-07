@@ -1,4 +1,5 @@
 import { wait } from '@hairy/ether-lib'
+import { If } from '@hairy/react-lib'
 import { contracts, provider, signer } from '@harsta/client'
 import { Button } from '@heroui/react'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
@@ -19,21 +20,13 @@ function Page() {
 
   return (
     <layouts.default>
-      <div className="flex-center">
+      <div className="mb-4 flex">
         <ConnectButton />
-        <Button>12321</Button>
-        <div className="text-red-100">123213</div>
       </div>
-      {isConnected && (
-        <div className="flex gap-2">
-          <div className="flex-center">
-            <button onClick={sign}>Sign Message</button>
-          </div>
-          <div className="flex-center">
-            <button onClick={transfer}>Transfer erc20</button>
-          </div>
-        </div>
-      )}
+      <If cond={isConnected} tag="div" className="flex gap-2">
+        <Button onPress={sign} color="primary">Sign Message</Button>
+        <Button onPress={transfer} color="secondary">Transfer erc20</Button>
+      </If>
     </layouts.default>
   )
 }
