@@ -6,6 +6,7 @@
 // biome-ignore lint: disable
 export {}
 declare global {
+  const addresses: typeof import('../config/addresses')['default']
   const clsx: typeof import('clsx')['default']
   const createRef: typeof import('react')['createRef']
   const forwardRef: typeof import('react')['forwardRef']
@@ -31,4 +32,5 @@ declare global {
   const useState: typeof import('react')['useState']
   const useSyncExternalStore: typeof import('react')['useSyncExternalStore']
   const useTransition: typeof import('react')['useTransition']
+  const wagmiConfig: typeof import('../config/wagmi')['wagmiConfig']
 }

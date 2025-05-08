@@ -1,4 +1,3 @@
-import { wait } from '@hairy/ether-lib'
 import { If } from '@hairy/react-lib'
 import { contracts, provider, signer } from '@harsta/client'
 import { Button } from '@heroui/react'
@@ -15,7 +14,7 @@ function Page() {
 
   async function transfer() {
     const erc20 = contracts.ERC20.resolve('signer')
-    await wait(erc20.transfer('[your address]', 1))
+    await erc20.transfer('', 1)
   }
 
   return (
