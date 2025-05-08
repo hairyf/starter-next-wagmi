@@ -3,6 +3,7 @@ import { defineConfig } from 'harsta'
 const config = defineConfig({
   paths: {
     sources: './src/contracts',
+    config: './src/config',
   },
   networks: {
     goerli: {
