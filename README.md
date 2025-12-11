@@ -5,13 +5,14 @@ leverages the capabilities of [Rainbowkit 2](https://beta.rainbowkit.com/guides/
 ## Features
 
 - ⚡️ Built with speed using [Next.js 15](https://nextjs.org/), [React](https://react.docschina.org/), [Rainbowkit 2](https://beta.rainbowkit.com/guides/rainbowkit-wagmi-v2), [Wagmi 2](https://github.com/wevm/wagmi), and [Ethers 6](https://github.com/ethers-io/ethers.js)
-- 🗒 Generate multiple contract types easily with the `pnpm harsta compile` command
-- 🎨 Seamless integration with Tailwind CSS using [UnoCSS](https://github.com/unocss/unocss)
-- 🔍 [Utilize icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons) from any icon sets using classes with [Icônes](https://icones.netlify.app/)
+- 🗒 Generate multiple contract types easily with [etherlib-generator](https://github.com/hairyf/etherlib-generator) - automatically runs on `pnpm install` or manually with `pnpm etherlib generate`
+- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
+- 🎭 Beautiful UI components powered by [Hero UI](https://heroui.com/) (formerly NextUI)
 
 ## Credits
 
 - [Rainbowkit](https://github.com/rainbow-me/rainbowkit)
-- [Harsta](https://github.com/hairyf/harsta)
+- [etherlib-generator](https://github.com/hairyf/etherlib-generator)
+- [Hero UI](https://heroui.com/)
 - [Wagmi](https://wagmi.sh/react/getting-started)
 - [Next.js](https://nextjs.org/)
