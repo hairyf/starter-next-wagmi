@@ -1,15 +1,9 @@
-/* eslint-disable ts/ban-ts-comment */
-import { chains } from '@harsta/client'
-import { connectorsForWallets, getDefaultWallets } from '@rainbow-me/rainbowkit'
+import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+import { mainnet } from 'viem/chains'
 
-import { createConfig } from 'wagmi'
-
-const wallets = getDefaultWallets().wallets
-const connectors = connectorsForWallets(wallets, { appName: 'Starter', projectId: ' ' })
-
-export const wagmiConfig = createConfig({
-  // @ts-expect-error
-  chains: Object.values(chains),
-  connectors,
-  ssr: true,
+export const wagmiConfig = getDefaultConfig({
+  appName: 'My RainbowKit App',
+  projectId: 'YOUR_PROJECT_ID',
+  chains: [mainnet],
+  ssr: true, // If your dApp uses server side rendering (SSR)
 })

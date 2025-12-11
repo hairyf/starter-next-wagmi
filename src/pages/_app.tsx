@@ -1,6 +1,4 @@
-import { wagmiConfig } from '@/config'
 import { Injector } from '@hairy/react-lib'
-import { SubscribeWagmiConfig } from '@harsta/client/wagmi'
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Head from 'next/head'

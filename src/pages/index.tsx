@@ -1,20 +1,24 @@
 import { If } from '@hairy/react-lib'
-import { contracts, provider, signer } from '@harsta/client'
 import { Button } from '@heroui/react'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
+import { zeroAddress } from 'viem'
 import { useAccount } from 'wagmi'
 
 function Page() {
   const { isConnected } = useAccount()
 
   async function sign() {
-    const number = await provider.getBlockNumber()
-    signer.signMessage(`Hello World! \n Now block number is ${number}`)
+    const number = await client.getBlockNumber()
+    wallet.signMessage({
+      message: `Hello World! \n Now block number is ${number}`,
+    })
   }
 
   async function transfer() {
-    const erc20 = contracts.ERC20.resolve('signer')
-    await erc20.transfer('', 1)
+    const hash = await writeErc20Transfer({
+      args: [zeroAddress, BigInt(1)],
+    })
+    await client.waitForTransactionReceipt({ hash })
   }
 
   return (
